@@ -1,10 +1,10 @@
 ---
-title: "Deploying and Resizing EBS Volumes on AWS: A Step-by-Step Guide"
+title: "Deploying and Resizing EBS Volumes on AWS: A Step-by-Step Guide for beginners"
 seoTitle: "Deploying and Resizing EBS Volumes on AWS: A Step-by-Step Guide"
 seoDescription: "Deploying and Resizing EBS Volumes on AWS: A Step-by-Step Guide for beginners"
 datePublished: Wed Oct 18 2023 18:04:21 GMT+0000 (Coordinated Universal Time)
 cuid: clnw2bopy000d08l570t63n7p
-slug: deploying-and-resizing-ebs-volumes-on-aws-a-step-by-step-guide
+slug: deploying-and-resizing-ebs-volumes-on-aws-a-step-by-step-guide-for-beginners
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1697652181160/586d36a9-18ed-4884-a67d-e4f584532af7.jpeg
 tags: aws, ebs, aws-ebs, aws-ebs-introduction, aws-ebs-beginners
 
