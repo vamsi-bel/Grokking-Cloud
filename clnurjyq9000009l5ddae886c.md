@@ -40,9 +40,9 @@ Let's dive into these scenarios to strengthen your understanding of AWS EC2, bol
         
     4. Use SSH (for a Linux instance) or RDP (for a Windows instance) to **log in** and diagnose the problem.
         
-    5. If needed, you can create an Amazon Machine Image (AMI) of the instance and **launch a new one**.  
+    5. If needed, you can create an Amazon Machine Image (AMI) of the instance and **launch a new one**.
         
-3. **Scenario**: Your EC2 instance is running out of disk space. How would you address this issue?  
+3. **Scenario**: Your EC2 instance is running out of disk space. How would you address this issue?
     
     **Sample Answer**: To address an out-of-disk-space issue:
     
@@ -52,7 +52,7 @@ Let's dive into these scenarios to strengthen your understanding of AWS EC2, bol
         
     3. Consider using **Amazon EFS** for scalable file storage.
         
-    4. Implement **log** rotation and **cleanup** policies to manage log files more efficiently.  
+    4. Implement **log** rotation and **cleanup** policies to manage log files more efficiently.
         
 4. **Scenario**: You need to automate the backup of your EC2 instance. What approach would you take?
     
@@ -161,7 +161,6 @@ Let's dive into these scenarios to strengthen your understanding of AWS EC2, bol
     3. If possible, use **blue-green deployment** techniques to deploy changes to a new instance before switching traffic.
         
         <details data-node-type="hn-details-summary"><summary>Blue-Green deployment</summary><div data-type="detailsContent">It is a deployment strategy used in software development and release management to minimize downtime and risks when updating or releasing a new version of an application or service. <strong>The "blue" environment</strong> represents the currently active and stable version of your application. This is the version that is currently serving production traffic and is considered the "<strong>live</strong>" environment. <strong>The "green" environment</strong> represents the new version of your application, which includes the changes or updates you want to deploy. This environment is separate from the blue environment and is not yet serving production traffic. By using this approach, you can perform updates or releases with <strong>minimal downtime and risk</strong>. If there are any issues with the green environment, you can quickly switch back to the blue environment to revert to the previous version. Blue-green deployments are often used in conjunction with load balancers or other traffic-routing mechanisms to facilitate this traffic-switching process seamlessly.</div></details>
-        
 13. **Scenario**: You have multiple EC2 instances in a VPC, and you need to securely communicate between them. How would you set up the network and security configurations?
     
     **Sample Answer**: To securely communicate between EC2 instances in a VPC:
@@ -233,6 +232,81 @@ Let's dive into these scenarios to strengthen your understanding of AWS EC2, bol
     3. Consider using AWS Key Management Service (KMS) for managing encryption keys.
         
     4. Enable encryption for any data stored in Amazon S3, RDS, and other AWS services as well.
+        
+
+---
+
+1. **Scenario**: You have an application that requires a specialized GPU for machine learning tasks. How would you provision EC2 instances with GPUs, and what instance types would you consider?
+    
+    **Answer**: To provision EC2 instances with GPUs for machine learning:
+    
+    1. Select EC2 instance types with GPU support such as the P3, G4, or Inf1 families.
+        
+    2. Customize the instance type based on the specific GPU requirements.
+        
+    3. Install GPU drivers and libraries for machine learning frameworks like TensorFlow or PyTorch.
+        
+    4. Utilize Amazon SageMaker for managed machine learning services that provide GPU instances.
+        
+2. **Scenario**: You have an application that requires a specialized GPU for machine learning tasks. How would you provision EC2 instances with GPUs, and what instance types would you consider?
+    
+    **Answer**: To provision EC2 instances with GPUs for machine learning:
+    
+    1. Select EC2 instance types with GPU support such as the P3, G4, or Inf1 families.
+        
+    2. Customize the instance type based on the specific GPU requirements.
+        
+    3. Install GPU drivers and libraries for machine learning frameworks like TensorFlow or PyTorch.
+        
+    4. Utilize Amazon SageMaker for managed machine learning services that provide GPU instances.
+        
+3. **Scenario**: Your organization needs to reduce costs by making use of EC2 Spot Instances. How can you effectively integrate Spot Instances into your workload?
+    
+    **Answer**: To effectively integrate Spot Instances into your workload:
+    
+    1. Identify workloads that are fault-tolerant and can handle interruptions.
+        
+    2. Create an Auto Scaling group that includes Spot Instances alongside On-Demand Instances.
+        
+    3. Set bid prices based on market conditions and instance types.
+        
+    4. Use Amazon CloudWatch and CloudTrail for monitoring and automation to manage Spot Instances.
+        
+4. **Scenario**: You want to achieve zero downtime while performing maintenance on an EC2 instance. How can you implement a zero-downtime strategy?
+    
+    **Answer**: To implement a zero-downtime strategy for maintenance:
+    
+    1. Use an Elastic Load Balancer to distribute traffic to multiple instances.
+        
+    2. Create a rolling deployment strategy, where you update one instance at a time.
+        
+    3. Implement a health check mechanism to ensure the new instance is healthy before directing traffic to it.
+        
+    4. Consider utilizing AWS CodeDeploy or other deployment management tools.
+        
+5. **Scenario**: Your EC2 instances are running on a legacy instance type, and you want to migrate to a more modern instance type for improved performance. How would you plan and execute this migration?
+    
+    **Answer**: To plan and execute a migration to a more modern EC2 instance type:
+    
+    1. Identify the appropriate modern instance type based on your workload.
+        
+    2. Create an Amazon Machine Image (AMI) of the existing instances.
+        
+    3. Launch new instances with the modern instance type using the AMI.
+        
+    4. Test the performance of the new instances before migrating production workloads.
+        
+    5. Update DNS records or load balancer settings to route traffic to the new instances.
+        
+6. **Scenario**: You need to back up critical data on your EC2 instances and retain backups for a specified duration. How would you implement a data backup and retention strategy?
+    
+    **Answer**: To implement a data backup and retention strategy on EC2 instances:
+    
+    1. Use Amazon Data Lifecycle Manager to automate EBS snapshot creation and retention policies.
+        
+    2. Set up regular database backups for databases running on EC2 instances.
+        
+    3. Utilize Amazon S3 for long-term data archiving and implement lifecycle policies to manage object retention.
         
 
 ---
