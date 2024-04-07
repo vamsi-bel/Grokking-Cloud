@@ -13,11 +13,11 @@ tags: aws, aws-vpc, aws-transit-gateway
 
 ### **Introduction:**
 
-Efficient networking solutions are vital for seamless communication between services and resources in cloud environments. Amazon Web Services (AWS) offers AWS Transit Gateway, a scalable and centralized solution for connecting multiple Virtual Private Clouds (VPCs) and on-premises networks. In this article, we'll explore how to set up and utilize AWS **Transit Gateway** (TGW) to establish connectivity between multiple VPCs within the same region, eliminating the time-consuming process of manually accepting peering connections.  
+Efficient networking solutions are vital for seamless communication between services and resources in cloud environments. Amazon Web Services (AWS) offers AWS Transit Gateway, a scalable and centralized solution for connecting multiple Virtual Private Clouds (VPCs) and on-premises networks. In this article, we'll explore how to set up and utilize AWS **Transit Gateway** (TGW) to establish connectivity between multiple VPCs within the same region, eliminating the time-consuming process of manually accepting peering connections.
 
 We'll understand this in 5 steps.
 
-### **Step 1:** **Provisioning VPCs**
+### **Step 1:Provisioning VPCs**
 
 Begin by creating four VPCs within any region. For this lab, I've selected Singapore region. Ensure that each VPC has a unique CIDR block assigned to it, and also allocate a common CIDR block to all the VPCs. This setup ensures that there is no overlapping CIDR and allows for seamless communication within the VPCs.
 
@@ -30,9 +30,9 @@ Common CIDR - 10.0.0.0/8
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1712427585715/d0e1983e-b505-4b7d-9b08-0ac8d465a15e.png align="center")
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1712427739388/016f7ea8-7426-4cd4-bd09-5b1ef4417f5e.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1712468031886/7852086c-e125-4e57-ad36-8777343f7333.png align="center")
 
-Keep the settings as it is and Click on Create VPC. It create our first VPC (VPC-A). Similarly create the other 3.
+Select **None** for VPC endpoints, keep the other settings as it is and Click on Create VPC. It create our first VPC (VPC-A). Similarly create the other 3 VPCs (VPC-B, VPC-C and VPC-D).
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1712427932859/d89785a4-097e-45e1-836c-ce7cec501dbf.png align="center")
 
