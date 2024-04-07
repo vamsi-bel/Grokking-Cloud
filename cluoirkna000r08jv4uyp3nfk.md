@@ -64,7 +64,7 @@ Once the TGW is set up, create TGW attachments for each VPC. Specify the TGW ID 
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1712429294749/c45bb9f2-92a5-4b25-a5f1-c9d511d9085a.png align="center")
 
-We've to carefully do this step, I chose, VPC-A. then we need to select the 2 subnets of explicit association. In my case one subnet is ending with 497 and another with 0df.
+We've to do this step carefully. I chose VPC-A. For this, we need to select the 2 subnets of explicit association. In my case one subnet is ending with 497 and another with 0df.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1712429601936/dbdceb12-30bf-48c8-8261-3867373398c9.png align="center")
 
