@@ -69,6 +69,12 @@ Next, you'll need to configure the details of your budget:
     
     You'll receive e-mail notifications whenever your spending approaches or exceeds your budgeted amount, allowing you to adjust your usage accordingly.
     
+    ### **Does it incur any extra costs?**
+    
+    No, setting up budget alarms in AWS does not incur any additional costs. The AWS Budgets service itself is free to use. You can create, manage, and receive notifications for your budgets without incurring any charges.
+    
+    Budgets are designed to help you monitor your AWS spending and stay within your budgetary limits, making them an essential tool for cost management in the AWS cloud. By setting up budget alarms, you can proactively track your spending and receive notifications when your costs approach or exceed your predefined thresholds, helping you avoid unexpected expenses and optimize your usage of AWS services.
+    
     ### **Conclusion**
     
     Setting up budget alarms for your AWS usage is a proactive way to manage your costs and prevent overspending. By following the steps outlined in this guide, you can create custom budgets tailored to your needs and receive timely notifications to help you stay within your budget constraints. With budget alarms in place, you can focus on leveraging AWS services without worrying about unexpected expenses.
