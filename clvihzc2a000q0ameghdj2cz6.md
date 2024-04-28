@@ -25,19 +25,19 @@ To get started, sign in to the AWS Management Console using your AWS account cre
 
 ### **Step 2: Navigate to the AWS Budgets Dashboard**
 
-Once logged in, navigate to the AWS Budgets service by typing "Budgets" into the search bar at the top of the console. Click on the "Budgets" option that appears in the dropdown menu.
+Once logged in, navigate to the AWS Budgets service by typing **"Budgets"** into the search bar at the top of the console. Click on the **"Budgets"** option that appears in the dropdown menu.
 
-Or else, click on your account name or profile icon in the top right corner of the AWS Management Console. In the dropdown menu, select "Billing and Cost Management." This will take you to the Billing and Cost Management Dashboard.
+Or else, click on your account name or profile icon in the top right corner of the AWS Management Console. In the dropdown menu, select **"Billing and Cost Management."** This will take you to the Billing and Cost Management Dashboard.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1714242920706/7f15e97d-8d8a-474f-86cd-598c2a5e4c1c.png align="center")
 
-From the left-hand navigation pane, click on "Budgets" under the "Budgets and Planning" section. This will direct you to the AWS Budgets dashboard.
+From the left-hand navigation pane, click on **"Budgets"** under the **"Budgets and Planning"** section. This will direct you to the AWS Budgets dashboard.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1714243255322/a19a303f-c9f1-4cb5-8c09-f8468de4e1da.png align="center")
 
 ### **Step 3: Create a New Budget**
 
-Click on the "Create budget" button to start setting up a new budget
+Click on the **"Create budget"** button to start setting up a new budget
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1714243413678/9a9e5bec-92ae-40b9-ad7b-7f9a99514150.png align="center")
 
@@ -45,13 +45,13 @@ Click on the "Create budget" button to start setting up a new budget
 
 Next, you'll need to configure the details of your budget:
 
-* **Budget Name**: Give your budget a descriptive name to help you identify it later. I'm giving "**My Monthly Cost Budget"**
+* **Budget Name**: Give your budget a descriptive name to help you identify it later. For Example "**My Monthly Cost Budget"**
     
 * **Budget Period**: Choose the timeframe for your budget, such as monthly, quarterly, or annually. I'm choosing **"Monthly cost budget".**
     
 * **Budgeted Amount**: Set the maximum amount you're willing to spend during the budget period. I don't want to exceed **$2 per month**.
     
-* **Email recipients** : Specify the email recipients you want to notify when the threshold has exceeded. I'm giving mine.
+* **Email recipients** : Specify the email recipients you want to notify when the threshold has exceeded. For this demo, I mentioned my mail id as shown below.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1714243464200/22ba80c4-11a8-411a-9f20-d0690de1e739.png align="center")
     
@@ -59,7 +59,7 @@ Next, you'll need to configure the details of your budget:
     
     ### **Step 7: Review and Create Your Budget**
     
-    Double-check your budget details to ensure everything is set up correctly. Once you're satisfied, click the "Create budget" button to activate your budget.
+    Double-check your budget details to ensure everything is set up correctly. Once you're satisfied, click the **"Create budget"** button to activate your budget.
     
     ### **Step 8: Monitor Your Budget**
     
